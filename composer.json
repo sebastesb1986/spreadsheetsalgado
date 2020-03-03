@@ -1,0 +1,13 @@
+{
+    "name": "devsheet/spreadsheet",
+    "description": "This is a component for import custom data of flat files excel.",
+    "require": {
+        "maatwebsite/excel": "^3.1"
+    },
+    "authors": [
+        {
+            "name": "Sebastian Salgado",
+            "email": "salgadosb1986@gmail.com"
+        }
+    ]
+}
