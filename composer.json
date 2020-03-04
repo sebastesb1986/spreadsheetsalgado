@@ -10,5 +10,11 @@
             "email": "salgadosb1986@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Devsheet\\Spreadsheet\\": "src/"
+        }
+    },
     "minimum-stability": "dev"
 }
