@@ -9,5 +9,6 @@
             "name": "Sebastian Salgado",
             "email": "salgadosb1986@gmail.com"
         }
-    ]
+    ],
+    "minimum-stability": "dev"
 }
