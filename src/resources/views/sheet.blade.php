@@ -18,7 +18,6 @@
                                 Browse&hellip; <input type="file" name="excel" id="excel">
                             </span>
                         </label>
-                        <input type="text" class="form-control" readonly style="margin-top: 11px;">
                     </div>
                 
                     <div class="input-group">
