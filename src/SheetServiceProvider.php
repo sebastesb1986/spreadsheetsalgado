@@ -23,6 +23,10 @@ class SheetServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->publishes([
+            __DIR__.'/../database/migrations/' => database_path('migrations')
+        ], 'migrations');
+        
         // Routes of our component
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
 
