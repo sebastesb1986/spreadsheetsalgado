@@ -20,7 +20,7 @@ class SheetServiceProvider extends ServiceProvider
     public function boot()
     {
         // Routes of our component
-        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        // $this->loadRoutesFrom(__DIR__.'/routes/web.php');
 
         // Views(interface)
         $this->loadViewsFrom(__DIR__.'/resources/views', 'spreadsheet');
