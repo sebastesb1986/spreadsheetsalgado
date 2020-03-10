@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Devsheet\Spreadsheet\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\imports\SpreadSheet;
-use App\Sheet;
-use App\SheetHeader;
+use Devsheet\Spreadsheet\imports\SpreadSheet;
+use Devsheet\Spreadsheet\models\Sheet;
+use Devsheet\Spreadsheet\models\SheetHeader;
 use Maatwebsite\Excel\Facades\Excel;
 
 

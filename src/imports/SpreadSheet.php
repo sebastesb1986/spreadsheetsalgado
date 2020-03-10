@@ -1,9 +1,9 @@
 <?php
 
-namespace App\imports;
+namespace Devsheet\Spreadsheet\imports;
 
-use App\Sheet;
-use App\SheetHeader;
+use Devsheet\Spreadsheet\models\Sheet;
+use Devsheet\Spreadsheet\models\SheetHeader;
 use Illuminate\Foundation\Http\FormRequest;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Collection;
