@@ -29,13 +29,29 @@ class SheetServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
 
         $this->publishes([
-            __DIR__.'/resources/views' => base_path('resources/views/devsheet/spreadsheet'),
+            __DIR__.'/resources/views' => resource_path('views/devsheet/spreadsheet'),
         ]);
+
+        $this->publishes([
+            __DIR__.'/imports' => base_path('App/imports')
+        ]);
+
+        $this->publishes([
+            __DIR__.'/Http/Controllers' => base_path('app/http/controllers')
+        ]);
+
+        $this->publishes([
+            __DIR__.'/models' => base_path('App')
+        ]);
+
+        $this->publishes([
+            __DIR__.'/database/migrations/' => database_path('migrations')
+        ], 'migrations');
     }
 
     public function register()
     {
-        $this->app->make('Devsheet\Spreadsheet\Http\Controllers\SheetController');
+        //$this->app->make('Devsheet\Spreadsheet\Http\Controllers\SheetController');
     }
     
 }
