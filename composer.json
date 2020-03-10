@@ -13,7 +13,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Devsheet\\Spreadsheet\\SheetServiceProvider"
+                "Devsheet\\Spreadsheet\\SheetServiceProvider",
+                "Maatwebsite\\Excel\\ExcelServiceProvider::class"
             ]
         }
     },
