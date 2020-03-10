@@ -10,20 +10,17 @@
             "email": "salgadosb1986@gmail.com"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "App\\": "app/",
-            "Devsheet\\Spreadsheet\\": "src/"
-        }
-    },
     "extra": {
         "laravel": {
             "providers": [
                 "Devsheet\\Spreadsheet\\SheetServiceProvider"
-            ],
-            "aliases": {
-                "Debugbar": "Devsheet\\Spreadsheet\\Facade"
-            }
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Devsheet\\Spreadsheet\\": "src/"
         }
     },
     "minimum-stability": "dev"

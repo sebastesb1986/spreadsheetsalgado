@@ -11,10 +11,6 @@ class SheetServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
-    {
-        //
-    }
 
     /**
      * Bootstrap services.
@@ -23,10 +19,6 @@ class SheetServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([
-            __DIR__.'/../database/migrations/' => database_path('migrations')
-        ], 'migrations');
-        
         // Routes of our component
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
 
@@ -35,5 +27,15 @@ class SheetServiceProvider extends ServiceProvider
 
         // Migrations for the database
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+
+        $this->publishes([
+            __DIR__.'/resources/views' => base_path('resources/views/devsheet/spreadsheet'),
+        ]);
     }
+
+    public function register()
+    {
+        $this->app->make('Devsheet\Spreadsheet\Http\Controllers\SheetController');
+    }
+    
 }
