@@ -16,5 +16,15 @@
             "Devsheet\\Spreadsheet\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Devsheet\\Spreadsheet\\SheetServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Devsheet\\Spreadsheet\\Facade"
+            }
+        }
+    },
     "minimum-stability": "dev"
 }
