@@ -1,6 +1,6 @@
 <?php
 
-namespace Devsheet\Spreadsheet\models;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
