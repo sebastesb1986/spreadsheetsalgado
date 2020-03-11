@@ -36,7 +36,7 @@ Route::post('import', 'SheetController@store')->name('import');
 
 8.	Finalmente, poner a correr el servidor: php artisan serve
 
-De esa manera accedemos a la vista /sheet desde el navegador web para realizar la importación de archivo excel personalizado: http://127.0.0.1/sheet.
+De esa manera accedemos a la vista /sheet desde el navegador web para realizar la importación de archivo excel personalizado: http//localhost/sheet.
 
 NOTA: devsheet/spreadsheet es completamente personalizable por el usuario para determinar el formato de los datos del archivo excel para ser importados a la base de datos en el archivo SpreadSheet.php ubicado dentro de App\imports.
 De igual manera, la vista del componente puede ser editada en el archivo sheet.blade.php dentro de Resources\views\devsheet\spreadsheet.
